@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyunlar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 100px auto;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #ffeb3b;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        button {
+            background: #ffeb3b;
+            color: #333;
+            border: none;
+            padding: 15px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background: #ffd700;
+            transform: scale(1.05);
+        }
+        button:active {
+            background: #ff5722;
+            transform: scale(1);
+        }
+        button:focus {
+            outline: none;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 50px 15px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eğlenceli Oyunlar</h1>
+        <p>Oynamaya başlamak için oyunlardan birine tıklayın</p>
+        <button onclick="window.location.href='tic_tac_toe_game.html';">Tic Tac Toe</button>
+        <button onclick="window.location.href='mathtest_game.html';">Matematik Testi</button>
+        <button onclick="window.location.href='memory_game.html';">Eşleştirme Oyunu</button>
+    </div>
+</body>
+</html>
+
